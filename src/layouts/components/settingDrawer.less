@@ -1,0 +1,154 @@
+@import '../../styles/variables.less';
+
+.app-setting-drawer-handle {
+  position: fixed;
+  top: 240px;
+  right: 0;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 16px;
+  text-align: center;
+  background: var(--app-primary-color, @primary-color);
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.app-setting-drawer-content {
+  position: relative;
+  min-height: 100%;
+}
+
+.app-setting-drawer-body-title {
+  margin: 8px 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.app-setting-drawer-block-checkbox {
+  display: flex;
+  min-height: 42px;
+  gap: 16px;
+}
+
+.app-setting-drawer-block-checkbox-item {
+  position: relative;
+  width: 44px;
+  height: 36px;
+  overflow: hidden;
+  background-color: #f0f2f5;
+  border-radius: 4px;
+  box-shadow: 0 1px 2.5px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.app-setting-drawer-block-checkbox-item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33%;
+  height: 100%;
+  background-color: #ffffff;
+  content: '';
+}
+
+.app-setting-drawer-block-checkbox-item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: #ffffff;
+  content: '';
+}
+
+.app-setting-drawer-block-checkbox-item-realDark {
+  background-color: rgba(0, 21, 41, 0.85);
+}
+
+.app-setting-drawer-block-checkbox-item-realDark::before {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.app-setting-drawer-block-checkbox-item-realDark::after {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.app-setting-drawer-block-checkbox-item-light::before,
+.app-setting-drawer-block-checkbox-item-light::after {
+  background-color: #ffffff;
+}
+
+.app-setting-drawer-block-checkbox-item-dark::before,
+.app-setting-drawer-block-checkbox-item-side::before {
+  z-index: 1;
+  background-color: #00182e;
+}
+
+.app-setting-drawer-block-checkbox-item-dark::after,
+.app-setting-drawer-block-checkbox-item-side::after {
+  background-color: #ffffff;
+}
+
+.app-setting-drawer-block-checkbox-item-top::before {
+  background-color: transparent;
+}
+
+.app-setting-drawer-block-checkbox-item-top::after {
+  background-color: #00182e;
+}
+
+.app-setting-drawer-block-checkbox-item-mix::before {
+  background-color: #ffffff;
+}
+
+.app-setting-drawer-block-checkbox-item-mix::after {
+  background-color: #00182e;
+}
+
+.app-setting-drawer-block-checkbox-selectIcon {
+  position: absolute;
+  right: 6px;
+  bottom: 4px;
+  color: var(--app-primary-color, @primary-color);
+  font-weight: bold;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.app-setting-drawer-block-checkbox-icon {
+  font-size: 56px;
+  line-height: 56px;
+}
+
+.app-setting-drawer-theme-color {
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.app-setting-drawer-theme-color-block {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+  margin-right: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.app-setting-drawer-list .ant-list-item {
+  padding: 8px 0;
+}
+
+.app-setting-drawer-production-hint {
+  margin-top: 16px;
+  font-size: 12px;
+}
