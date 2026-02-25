@@ -1,6 +1,6 @@
 # React Template
 
-基于 React + TypeScript + Rsbuild + Less + Ant Design 6 的项目框架，包含配置化路由、多标签布局、KeepAlive 缓存与统一请求封装。
+基于 React + TypeScript + Vite + Less + Ant Design 6 的项目框架，包含配置化路由、多标签布局、KeepAlive 缓存与统一请求封装。
 
 ## 环境要求
 - Node.js >= 22

@@ -8,7 +8,7 @@ export default function Dashboard() {
   return (
     <Space direction="vertical" size={16} style={{ width: '100%' }}>
       <Card loading={loading}>
-        <Row align="middle" gutter={16}>
+        <Row align="middle" gutter={16} style={{ marginInline: 0 }}>
           <Col>
             <Avatar size={64} src={data?.user.avatar} />
           </Col>
@@ -28,7 +28,7 @@ export default function Dashboard() {
         </Row>
       </Card>
 
-      <Row gutter={16}>
+      <Row gutter={16} style={{ marginInline: 0 }}>
         <Col span={16}>
           <Card title="项目进展" loading={loading}>
             <List

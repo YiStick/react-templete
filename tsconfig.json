@@ -14,5 +14,5 @@
     },
     "types": ["vitest/globals"]
   },
-  "include": ["src", "rsbuild.config.ts", "vitest.config.ts"]
+  "include": ["src", "vite.config.ts", "vitest.config.ts"]
 }

@@ -1,6 +1,6 @@
 # React 项目模板方案（基于参考布局）
 
-> 目标：在本目录创建一个基于 **React + TypeScript + Rsbuild + Less** 的企业级模板，布局方向参考 Ant Design Pro 的 Workplace 页面（仅布局方向），并满足多标签 + 缓存 + 一屏布局等要求。
+> 目标：在本目录创建一个基于 **React + TypeScript + Vite + Less** 的企业级模板，布局方向参考 Ant Design Pro 的 Workplace 页面（仅布局方向），并满足多标签 + 缓存 + 一屏布局等要求。
 
 ## 1. 参考布局与页面结构
 - 参考页面：Ant Design Pro / Dashboard / Workplace（仅布局方向）
@@ -13,7 +13,7 @@
 
 ## 2. 技术栈与约束
 - React + TypeScript
-- Rsbuild
+- Vite
 - Less
 - Zustand
 - Axios
@@ -27,7 +27,7 @@
 
 ### 2.1 依赖建议（使用 latest）
 - runtime: `react`, `react-dom`, `react-router-dom`, `antd`, `zustand`, `axios`, `ahooks`, `react-activation`
-- build: `@rsbuild/core`, `@rsbuild/plugin-react`, `less`, `less-loader`
+- build: `vite`, `@vitejs/plugin-react`, `less`
 - test: `vitest`, `@testing-library/react`, `@testing-library/jest-dom`, `jsdom`
 
 > 具体版本不写死，统一使用 `@latest`。
@@ -67,7 +67,7 @@
 │  │  ├─ variables.less
 │  │  └─ global.less
 │  └─ main.tsx
-├─ rsbuild.config.ts
+├─ vite.config.ts
 ├─ tsconfig.json
 ├─ package.json
 └─ vitest.config.ts
@@ -166,9 +166,9 @@
   - `MainLayout` 使用 `height: 100vh; display: flex; flex-direction: column;`
   - `Content` 区域 `flex: 1; overflow: auto;`
 
-## 8. Rsbuild 与工程配置
-- Rsbuild 插件：`@rsbuild/plugin-react`
-- Less 支持：开启 `less-loader`
+## 8. Vite 与工程配置
+- Vite 插件：`@vitejs/plugin-react`
+- Less 支持：配置 `css.preprocessorOptions.less`
 - Vitest 配置：`jsdom` 环境
 - 拆包处理（build splitting）：
   - 路由页面使用 `lazy` 动态加载，形成按路由分包
